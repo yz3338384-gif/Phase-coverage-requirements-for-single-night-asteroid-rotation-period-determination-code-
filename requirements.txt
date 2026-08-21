@@ -1,4 +1,4 @@
-these mode are required in Phthon
+#these mode are required in Pyhthon
 
 numpy
 scipy
