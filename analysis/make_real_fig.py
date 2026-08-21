@@ -1,4 +1,4 @@
-"""Figure 2: real-data coverage-recovery curve (56 targets, 2166 sessions) + simulation comparison."""
+"""Figure 2: real-data coverage-recovery curve (54 targets, 2,091 sessions) + simulation comparison."""
 import os
 import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -23,7 +23,7 @@ sub = df[df['period_h'] == 12].groupby('coverage')['recovery_rate'].mean()
 
 fig, ax = plt.subplots(figsize=(7, 5))
 ax.errorbar(centers, rates, yerr=[1.96*np.sqrt(r*(1-r)/n) for r, n in zip(rates, ns)],
-            fmt='o-', color='C0', lw=2, ms=7, capsize=5, label='Real ALCDEF (56 targets, 2166 sessions)')
+            fmt='o-', color='C0', lw=2, ms=7, capsize=5, label='Real ALCDEF (54 targets, 2,091 sessions)')
 ax.plot(sim_c, [sub[c] for c in sim_c], 's--', color='C1', lw=2, ms=7, label='Simulation (P=12 h, avg over amplitudes)')
 ax.axvline(0.25, color='k', ls=':', lw=1.5)
 ax.text(0.255, 0.42, 'C = 0.25', fontsize=11)
