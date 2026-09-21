@@ -3,7 +3,7 @@
 Code for the manuscript:
 
 > **Phase-coverage requirements for single-night asteroid rotation period determination**
-> *Astronomische Nachrichten* (submitted)
+> *Solar System Research * (submitted)
 
 This repository reproduces all simulations, figures, and the real-data validation
 of the paper. It contains **only** the minimal code set needed for the AN paper
