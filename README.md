@@ -6,7 +6,7 @@ Code for the manuscript:
 > *Solar System Research * (submitted)
 
 This repository reproduces all simulations, figures, and the real-data validation
-of the paper. It contains **only** the minimal code set needed for the AN paper
+of the paper. It contains **only** the minimal code set needed for the paper
 (the v10 Coverage-Aware Fourier Periodometry framework is a separate project).
 
 ## Structure
